@@ -1,0 +1,45 @@
+@import "../../common/colors.scss";
+.detils-wrap {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px 0;
+}
+.movie-star {
+  color: $font-scundry;
+  margin-top: 20px;
+
+  span {
+    padding-right: 10px;
+  }
+}
+.movie-title {
+  color: $font-primary;
+  font-size: 30px;
+}
+.movie-plot {
+  margin-top: 20px;
+  line-height: 1.5;
+  color: $font-primary;
+}
+.movie-bottom > div span:first-child {
+  padding: 20px 0;
+  font-weight: 600;
+  display: inline-block;
+  width: 100px;
+  color: $font-primary;
+}
+.movie-bottom > div span {
+  color: $font-scundry;
+}
+.fa-star {
+  color: #ffc900;
+}
+.fa-thumbs-up {
+  color: #ffffff;
+}
+.fa-file {
+  color: rgb(191, 213, 214);
+}
+.fa-calendar {
+  color: peachpuff;
+}
