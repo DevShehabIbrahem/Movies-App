@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import { useDispatch } from "react-redux";
 import {
   fetchacynkmovies,
@@ -21,7 +21,7 @@ const Header = () => {
   return (
     <div>
       <div className="header">
-        <Link to="/">
+        <Link to="/Movies-App/">
           <div className="Logo">Movie App</div>
         </Link>
         <div className="search-bar">
