@@ -5,11 +5,12 @@ export const fetchacynkmovies = createAsyncThunk(
   "movie/fetchacynkmovies", //To [genreting the life cycle]  in this reducer [pendenig,fullfilld,rejected]
   async (term) => {
     const response = await MoviesApi.get(
-      `?apiKey=${Apikey}&s=${term}&type=movie`
+      `?apikey=${Apikey}&s=${term}&type=movie`
     );
     return response.data;
   }
 );
+
 export const fetchacynkseries = createAsyncThunk(
   "movie/fetchacynkseries", //To [genreting the life cycle]  in this reducer [pendenig,fullfilld,rejected]
   async (term) => {
@@ -19,6 +20,7 @@ export const fetchacynkseries = createAsyncThunk(
     return response.data;
   }
 );
+
 export const fetchDetilsApi = createAsyncThunk(
   "movie/fetchDetilsApi", //To [genreting the life cycle]  in this reducer [pendenig,fullfilld,rejected]
   async (id) => {

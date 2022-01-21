@@ -9,12 +9,8 @@ import {
   showmovies,
 } from "../../featuresRedux/Movies/movieslice";
 function Show() {
-  const dispatch = useDispatch();
   const show = useSelector(showmovies);
 
-  useEffect(() => {
-    dispatch(fetchacynkseries());
-  }, [dispatch]);
   let rendershow = "";
   rendershow =
     show.Response === "True" ? (
@@ -22,7 +18,6 @@ function Show() {
     ) : (
       <div>{show.Error}</div>
     );
-
   return (
     <div className="movie-wrapper">
       <div className="movie-list">
