@@ -1,13 +1,10 @@
 import React from "react";
 import Slider from "react-slick";
 import { Settings } from "../../common/settings";
-import { useDispatch, useSelector } from "react-redux";
+import { useSelector } from "react-redux";
 import MoveCard from "../MoveCard/MoveCard";
 import "./show.scss";
-import {
-  fetchacynkseries,
-  showmovies,
-} from "../../featuresRedux/Movies/movieslice";
+import { showmovies } from "../../featuresRedux/Movies/movieslice";
 function Show() {
   const show = useSelector(showmovies);
 
